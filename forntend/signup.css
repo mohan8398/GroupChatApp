@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .container {
+    box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.551);
+    -webkit-box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+    width: 40%;
+    height: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .container .formCont {
+    -webkit-backdrop-filter: blur(0.2em);
+            backdrop-filter: blur(0.2em);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.278);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  
+  .container .formCont .signup_img {
+    width: 80px;
+    margin: 0 auto;
+  }
+  
+  .container .formCont .signuptitle {
+    margin: 0 auto;
+  }
+  
+  .container .formCont label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  
+  .container .formCont input {
+    background-color: rgba(255, 255, 255, 0.881);
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.541);
+    border-radius: 4px;
+    width: 90%;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
+  .container .formCont .submitbtn {
+    border: none;
+    margin-top: 20px;
+    width: 110px;
+    height: 30px;
+    border-radius: 7px;
+    margin: 20px auto;
+    background-color: rgba(71, 71, 247, 0.791);
+    cursor: pointer;
+  }
+  
+  .container .formCont .have_account {
+    color: black;
+    margin: 0  auto;
+    cursor: pointer;
+  }

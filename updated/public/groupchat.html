@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+    <div id="style1"></div>
+    <div class="middleContainer">
+        <div class="chatWindow"> 
+            <h1 class="mainHeader">Let's Chat</h1>
+            <ul id="chatList">
+            </ul>
+            <div class="chatWindowFooter"></div>
+        </div>
+    </div>
+
+    <div class="msgForm">
+        <form>
+            <input type="text" name="message" id="message" placeholder="message" required>
+            <button class="btn"><i class="bi bi-send-fill"></i></button>
+        </form>
+    </div>
+    <button class="setting"><i class="bi bi-gear-fill"></i></button>
+    <div class="fullMenu">
+        <form>
+            <h3>Add Participants</h3>
+            <p class="messageAdded"></p>
+            <label for="addUser">Add User</label>
+            <input type="email" id="addUser" name="addUser" placeholder="email" required>
+            <button class="btnAdd">Add</button>
+            <h3>Participants</h3>
+            <hr>
+            <div class="listOfUser"></div>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/groupchat.js"></script>
+</body>
+</html>

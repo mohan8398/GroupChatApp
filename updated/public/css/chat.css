@@ -1,0 +1,184 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(247, 240, 255);
+    font-family: sans-serif;
+}
+
+
+#style1{
+    width:100%;
+    height:100px;
+    background-color: rebeccapurple;
+    padding:0;
+    margin:0;
+    position: relative;
+    top:0;
+}
+
+.middleContainer{
+    width: 100%;
+    position: absolute;
+    top:20px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.chatWindow{
+    width:90%;
+    background-color: rgb(250, 245, 255);
+    min-height: 90vh;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.chatWindowFooter{
+    height:50px;
+}
+
+#chatList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+#chatList li{
+    padding: 5px 20px;
+}
+#chatList li:nth-child(odd){
+    background-color: rgb(207, 186, 230);
+}
+.msgForm{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message{
+    background-color:transparent;
+    border: none;
+    width:80vw;
+}
+#message:focus,#message:active{
+    outline: none;
+    background-color: transparent;
+}
+.btn{
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: rebeccapurple;
+}
+.msgForm form{
+    height: 20px;
+    padding: 5px;
+    background-color: white;
+}
+.mainWindow{
+    text-align: center;
+    background-color: rgb(250, 245, 255);
+    width:90%;
+    height: 90vh;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.userList,.groupForm{
+    width:100%;
+    height: 80%;
+}
+.userList{
+    box-sizing: border-box;
+    /* background-color: red; */
+    padding: 20px;
+    overflow: auto;
+    text-align:justify;
+}
+.userList div{
+    padding: 10px;
+    margin:10px;
+    background-color: rgb(237, 220, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+.userList div:hover{
+    cursor: pointer;
+    background-color: rgb(207, 186, 230);
+}
+.groupForm{
+    box-sizing: border-box;
+    display: block;
+}
+.groupForm form{
+    background-color: rgb(207, 186, 230);
+    height: 60%;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 0 0 5px black;
+}
+#groupName{
+    width:80%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#groupName:focus{
+    outline: none;
+}
+.createButton{
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.createButton:hover{
+    background-color: rgb(144, 124, 166);
+    cursor: pointer;
+}
+.headerLogo{
+    width: 100%;
+}
+.listOfUser{
+    overflow: auto;
+}
+.remove{
+    margin-left: 20px;
+}
+@media screen and (min-width:599px){    
+    #chatList{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width:80%;
+    }
+    .chatWindow{
+        padding: 10px 30px;
+    }
+    input{
+        width:50vw;
+    }
+    .userList,.groupForm{
+        width: 40%;
+    }
+}

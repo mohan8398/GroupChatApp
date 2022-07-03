@@ -1,0 +1,38 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    background-color: rgb(43, 25, 61);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80');background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.accountMessage{
+    font-size: 0.8rem;
+}
+.btn:enabled{
+    color: black;
+    background-color: rgb(176, 139, 212);
+    border: none;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.btn:disabled{
+    color: rgb(74, 74, 74);
+    background-color: rgb(182, 161, 203);
+    border: none;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.btn:enabled:hover{
+    color: black;
+    background-color: rgb(125, 94, 157);
+}
